@@ -18,12 +18,13 @@ namespace QRPrint
             InitializeComponent();
         }
 
-        private string racine = Path.GetPathRoot(Environment.SystemDirectory);
         private string pathUser;
         private string pathQR;
 
         private void button1_Click(object sender, EventArgs e)//mainButtonCreate
         {
+            vueNouveauDossier nouveauDossier = new vueNouveauDossier();
+            nouveauDossier.Show();
 
         }
 
