@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace QRPrint
 {
@@ -17,7 +18,11 @@ namespace QRPrint
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private string racine = Path.GetPathRoot(Environment.SystemDirectory);
+        private string pathUser;
+        private string pathQR;
+
+        private void button1_Click(object sender, EventArgs e)//mainButtonCreate
         {
 
         }
