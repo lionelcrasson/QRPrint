@@ -16,5 +16,25 @@ namespace QRPrint
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainButtonPrint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainButtonMAJ_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainButtonManage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
