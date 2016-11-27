@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Gma.QrCodeNet.Encoding.Windows;
+using Gma.QrCodeNet.Encoding;
 
 namespace QRPrint
 {
@@ -39,7 +41,7 @@ namespace QRPrint
         }
         private void createArborescence()
         {
-            fullPath = racine + "Client\\" + this.nom + this.prenom + num;
+            fullPath = racine + "Client\\" + this.nom + this.prenom + "_"+num;
             if (Directory.Exists(fullPath))
             {
                 throw new ArgumentException("Le dossier client existe déjà");
