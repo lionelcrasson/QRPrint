@@ -18,10 +18,6 @@ namespace QRPrint
             InitializeComponent();
         }
 
-        private string racine = Path.GetPathRoot(Environment.SystemDirectory);
-        private string pathUser;
-        private string pathQR;
-
         private void button1_Click(object sender, EventArgs e)//mainButtonCreate
         {
 
@@ -39,7 +35,8 @@ namespace QRPrint
 
         private void mainButtonManage_Click(object sender, EventArgs e)
         {
-
+            viewManageType windowType = new viewManageType();
+            windowType.Show();
         }
     }
 }
